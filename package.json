@@ -4,7 +4,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "vitest"
+    "test": "vitest",
+    "docker:dev": "docker-compose up -d",
+    "docker:down": "docker-compose down"
   },
   "dependencies": {
     "next": "latest",
