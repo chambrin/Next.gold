@@ -38,3 +38,6 @@ next-env.d.ts
 #other
 .idea
 DS_Store
+
+# secret
+.env

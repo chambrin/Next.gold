@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@prisma/client": "^5.7.1",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -30,6 +32,7 @@
     "@types/react": "18.2.45",
     "@vitejs/plugin-react": "^4.2.1",
     "jsdom": "^23.0.1",
+    "prisma": "^5.7.1",
     "storybook": "^7.6.7",
     "typescript": "5.3.3",
     "vitest": "1.0.4"
