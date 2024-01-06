@@ -6,7 +6,9 @@
     "start": "next start",
     "test": "vitest",
     "docker:dev": "docker-compose up -d",
-    "docker:down": "docker-compose down"
+    "docker:down": "docker-compose down",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "latest",
@@ -15,11 +17,20 @@
     "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.7",
+    "@storybook/addon-interactions": "^7.6.7",
+    "@storybook/addon-links": "^7.6.7",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.7",
+    "@storybook/nextjs": "^7.6.7",
+    "@storybook/react": "^7.6.7",
+    "@storybook/test": "^7.6.7",
     "@testing-library/react": "14.1.2",
     "@types/node": "20.10.4",
     "@types/react": "18.2.45",
     "@vitejs/plugin-react": "^4.2.1",
     "jsdom": "^23.0.1",
+    "storybook": "^7.6.7",
     "typescript": "5.3.3",
     "vitest": "1.0.4"
   }
