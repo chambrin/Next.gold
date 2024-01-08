@@ -4,4 +4,3 @@
 echo '🏗️👷 Project currently being analyzed👷‍♂️🏗️'
 echo 'please be patient, this may take a while...'
 
-npm run test:pre-commit

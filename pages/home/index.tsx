@@ -9,13 +9,13 @@ interface User {
 }
 
 const AllUsersQuery = gql`
-    query {
-        users {
-            id
-            name
-            email
-        }
-    }
+ query {
+  users {
+   id
+   name
+   email
+  }
+ }
 `;
 
 const HomePage = () => {
@@ -25,7 +25,6 @@ const HomePage = () => {
  const { loading, error, data } = useQuery<{ users: User[] }>(AllUsersQuery);
 
  const router = useRouter();
-
 
  if (loading) return <p>Loading...</p>;
  if (error) return <p>Error :(</p>;
@@ -41,7 +40,6 @@ const HomePage = () => {
    ))}
 
    <h2>Create User</h2>
-
   </div>
  );
 };
