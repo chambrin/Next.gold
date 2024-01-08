@@ -50,18 +50,13 @@
   "typescript": "5.3.3",
   "vitest": "1.0.4"
  },
-    "husky": {
-    "hooks": {
-     "pre-commit": "lint-staged"
-    }
-    },
  "lint-staged": {
   "**/*.{js,jsx,ts,tsx}": [
-   "next lint",
-   "prettier --config ./.prettierrc.js --write"
+   "eslint --fix",
+   "prettier --write ."
   ],
   "**/*.{css,scss,md,html,json}": [
-   "prettier --config ./.prettierrc.js --write"
+   "prettier --write ."
   ]
  }
 }
