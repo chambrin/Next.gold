@@ -8,3 +8,4 @@ const buildEslintCommand = (filenames) =>
 module.exports = {
  '*.{js,jsx,ts,tsx}': [buildEslintCommand],
 };
+
