@@ -1,8 +1,8 @@
-import Home from "../pages/home";
+import Home from '../pages/home';
 
 export default {
-    title: "Pages/Home",
-    component: Home,
+ title: 'Pages/Home',
+ component: Home,
 };
 
-export const HomePage = () => <Home />
+export const HomePage = () => <Home />;
