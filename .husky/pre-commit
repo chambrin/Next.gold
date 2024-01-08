@@ -1,4 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+echo '🏗️👷 Project currently being analyzed👷‍♂️🏗️'
+echo 'please be patient, this may take a while...'
+
 npm run test:pre-commit
