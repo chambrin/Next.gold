@@ -1,8 +1,17 @@
 # Next.js gold star-kit Ultimate SAAS starter kit
+![banner-next-gold](./public/img/banner-next-gold.png)
 
 Project likely to evolve a lot.
 
 **Under development 👨‍💻**
+
+
+## Installation
+
+```
+npx create-next-gold-app
+```
+
 
 ## Tech stack
 
@@ -31,12 +40,6 @@ Project likely to evolve a lot.
 8. Robust RESTful API Service: Use GraphQL and Apollo Client to create a robust and efficient RESTful API service.
 9. Easy and Reliable Deployment: Utilize Docker to simplify the deployment process and ensure reliability across different environments.
 10. Continuous Integration and Delivery: Utilize Husky and Lint-staged to enforce code quality checks and automate the CI/CD process.
-
-### Prerequisites
-
-- Node.js
-- Docker
-- NPM
 
 ### Prerequisites
 
