@@ -1,6 +1,5 @@
 {
  "private": true,
- "type": "module",
  "scripts": {
   "dev": "next dev",
   "build": "next build",
@@ -38,15 +37,18 @@
   "@types/node": "20.10.4",
   "@types/react": "18.2.45",
   "@vitejs/plugin-react": "^4.2.1",
+  "autoprefixer": "^10.4.16",
   "eslint": "8.56.0",
   "eslint-config-next": "14.0.4",
   "eslint-config-prettier": "^9.1.0",
   "husky": "^8.0.3",
   "jsdom": "^23.0.1",
   "lint-staged": "^15.2.0",
+  "postcss": "^8.4.33",
   "prettier": "3.1.1",
   "prisma": "^5.7.1",
   "storybook": "^7.6.7",
+  "tailwindcss": "^3.4.1",
   "typescript": "5.3.3",
   "vitest": "1.0.4"
  },

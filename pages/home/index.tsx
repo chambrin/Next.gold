@@ -33,6 +33,8 @@ const HomePage = () => {
    ))}
 
    <h2>Create User</h2>
+
+   <h1 className="text-3xl text-blue-400 font-bold underline">Hello world!</h1>
   </div>
  );
 };
