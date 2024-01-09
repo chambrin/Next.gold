@@ -34,7 +34,7 @@ const HomePage = () => {
 
    <h2>Create User</h2>
 
-   <h1 className="text-3xl text-blue-400 font-bold underline">Hello world!</h1>
+   <h1 className="text-3xl font-bold text-blue-400 underline">Hello world!</h1>
   </div>
  );
 };
