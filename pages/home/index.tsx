@@ -1,6 +1,4 @@
-import { useState, FormEvent } from 'react';
 import { gql, useMutation, useQuery } from '@apollo/client';
-import { useRouter } from 'next/router';
 
 interface User {
  id: string;
@@ -19,12 +17,7 @@ const AllUsersQuery = gql`
 `;
 
 const HomePage = () => {
- const [name, setName] = useState('');
- const [email, setEmail] = useState('');
-
  const { loading, error, data } = useQuery<{ users: User[] }>(AllUsersQuery);
-
- const router = useRouter();
 
  if (loading) return <p>Loading...</p>;
  if (error) return <p>Error :(</p>;
