@@ -1,4 +1,5 @@
 import React, { FC, ReactElement } from 'react';
+import '../styles/globals.css';
 
 interface RootLayoutProps {
  children: React.ReactNode;
@@ -6,8 +7,10 @@ interface RootLayoutProps {
 
 const RootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps): ReactElement => {
  return (
-  <html lang="en">
-  <body>{children}</body>
+  <html lang="en" className="dark">
+  <body>
+   {children}
+  </body>
   </html>
  );
 };
