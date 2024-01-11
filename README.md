@@ -1,4 +1,4 @@
-# Next.js gold star-kit Ultimate SAAS starter kit
+# Next.js gold Ultimate SAAS starter kit
 ![banner-next-gold](./public/img/banner-next-gold.png)
 
 Project likely to evolve a lot.
@@ -9,7 +9,7 @@ Project likely to evolve a lot.
 ## Installation
 
 ```
-npx create-next-gold-app
+npx create-next-gold-app my-project
 ```
 
 
@@ -47,13 +47,8 @@ npx create-next-gold-app
 - Docker
 - NPM
 
----
 
-1. Clone the repo
-
----
-
-2. Install NPM packages
+1. Install NPM packages
 
 ```other
 npm install
@@ -61,7 +56,7 @@ npm install
 
 ---
 
-3. Run the app
+2. Run the app
 
 To start the project in development, run the following command:
 
@@ -79,7 +74,7 @@ npm run docker:down
 
 ---
 
-4. Run the tests
+3. Run the tests
 
 ```other
 npm run test

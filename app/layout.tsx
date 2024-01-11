@@ -1,11 +1,15 @@
-export default function RootLayout({
- children,
-}: {
+import React, { FC, ReactElement } from 'react';
+
+interface RootLayoutProps {
  children: React.ReactNode;
-}) {
+}
+
+const RootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps): ReactElement => {
  return (
   <html lang="en">
-   <body>{children}</body>
+  <body>{children}</body>
   </html>
  );
-}
+};
+
+export default RootLayout;
