@@ -8,7 +8,7 @@ interface User {
  name: string;
  email: string;
 }
-const AllUsersQuery = gql`
+export const AllUsersQuery = gql`
     query {
         users {
             id
