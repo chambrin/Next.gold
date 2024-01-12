@@ -7,7 +7,7 @@ interface RootLayoutProps {
 
 const RootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps): ReactElement => {
  return (
-  <html lang="en" className="dark">
+  <html lang="en">
   <body>
    {children}
   </body>
