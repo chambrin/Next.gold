@@ -32,7 +32,8 @@
   "test:pre-commit": "npm run lint && npm run format"
  },
  "dependencies": {
-  "@apollo/client": "^3.8.8",
+  "@apollo/client": "^3.8.9",
+  "@apollo/experimental-nextjs-app-support": "^0.6.0",
   "@graphql-yoga/node": "^3.9.1",
   "@nextui-org/react": "^2.2.9",
   "@prisma/client": "^5.7.1",

@@ -1,5 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import '../styles/globals.css';
+import { ApolloWrapper } from './ApolloWrapper';
 
 interface RootLayoutProps {
  children: React.ReactNode;
@@ -9,7 +10,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps): ReactEl
  return (
   <html lang="en">
   <body>
-   {children}
+  <ApolloWrapper>{children}</ApolloWrapper>
   </body>
   </html>
  );
