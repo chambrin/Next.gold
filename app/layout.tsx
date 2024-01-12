@@ -3,7 +3,6 @@
 import React, { FC, ReactElement } from 'react';
 import '../styles/globals.css';
 import { ApolloWrapper } from './ApolloWrapper';
-import { NextUIProvider } from '@nextui-org/react';
 import { Providers } from './UiProviders';
 
 interface RootLayoutProps {
