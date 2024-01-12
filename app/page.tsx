@@ -8,7 +8,6 @@ interface User {
  name: string;
  email: string;
 }
-
 const AllUsersQuery = gql`
     query {
         users {
@@ -18,7 +17,6 @@ const AllUsersQuery = gql`
         }
     }
 `;
-
 export default function Page() {
  const { loading, error, data } = useQuery<{ users: User[] }>(AllUsersQuery);
  if (loading) return <p>Loading...</p>;
@@ -27,7 +25,9 @@ export default function Page() {
  return (
   <div>
    <h1 className="text-blue-400">App Router</h1>
-   <Button>Click me</Button>
+   <Button color="primary">
+    Primary
+   </Button>
    <div>
     <h1>Users</h1>
     {data?.users.map((user) => (
