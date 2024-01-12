@@ -1,10 +1,11 @@
 // components/Page.stories.tsx
 import { Meta, Story } from '@storybook/react';
 import { MockedProvider } from '@apollo/client/testing';
-import Page, { AllUsersQuery } from '../app/page'; // N'oubliez pas de modifier les chemins en fonction de votre structure de projet
+import Page from '../app/page';
+import { AllUsersQuery } from '../graphql/query/ALLUsersQuery';
 
 export default {
- title: 'Components/Page',
+ title: 'Page/Page',
  component: Page,
 } as Meta;
 

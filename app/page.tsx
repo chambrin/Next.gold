@@ -2,21 +2,16 @@
 import { Button } from '@nextui-org/react';
 import { ThemeSwitcher } from '../components/utils/ThemeSwitcher';
 import { gql, useQuery } from '@apollo/client';
+import { AllUsersQuery } from '../graphql/query/ALLUsersQuery';
+
 
 interface User {
  id: string;
  name: string;
  email: string;
 }
-export const AllUsersQuery = gql`
-    query {
-        users {
-            id
-            name
-            email
-        }
-    }
-`;
+
+
 export default function Page() {
  const { loading, error, data } = useQuery<{ users: User[] }>(AllUsersQuery);
  if (loading) return <p>Loading...</p>;
