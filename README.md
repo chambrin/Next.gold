@@ -47,6 +47,7 @@ npx create-next-gold-app my-project
 - Docker
 - NPM
 
+**Add and edit the .env file for your database, before continuing**
 
 1. Install NPM packages
 

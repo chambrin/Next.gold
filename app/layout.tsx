@@ -3,7 +3,7 @@
 import React, { FC, ReactElement } from 'react';
 import '../styles/globals.css';
 import { ApolloWrapper } from './ApolloWrapper';
-import { Providers } from './UiProviders';
+import { UiProviders } from './UiProviders';
 
 interface RootLayoutProps {
  children: React.ReactNode;
@@ -13,9 +13,9 @@ const RootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps): ReactEl
  return (
   <html lang="en" className='dark'>
   <body>
-  <Providers>
-  <ApolloWrapper>{children}</ApolloWrapper>
-  </Providers>
+  <UiProviders>
+   <ApolloWrapper>{children}</ApolloWrapper>
+  </UiProviders>
   </body>
   </html>
  );
