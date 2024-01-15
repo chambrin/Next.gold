@@ -10,15 +10,14 @@ export const schema = createSchema({
          hello: String
          users: [User]
      }
-
      type Mutation {
          login(email: String!, password: String!): User
      }
-
      type User {
          id: ID!
          name: String!
          email: String!
+         role: String!
      }
  `,
  resolvers: {
@@ -30,14 +29,13 @@ export const schema = createSchema({
    login: async (_, { email, password }, context) => {
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
-     throw new Error('No such user found');
+     throw new Error('No such user found'); // Ici se trouve l'erreur
     }
 
     const valid = await bcrypt .compare(password, user.password);
     if (!valid) {
      throw new Error('Invalid password');
     }
-
     return user;
    },
   },
