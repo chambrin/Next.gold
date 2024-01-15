@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { useMutation, gql } from '@apollo/client';
 import { useRouter } from 'next/navigation';
+import Cookie from 'js-cookie';
+
 
 const LOGIN_MUTATION = gql`
     mutation Login($email: String!, $password: String!) {
@@ -25,6 +27,9 @@ const LoginForm = () => {
    const response = await login({ variables: { email, password } });
    const userRole = response.data.login.role;
 
+   // Créer un cookie avec les informations de l'utilisateur
+   Cookie.set('user', JSON.stringify(response.data.login), { path: '/' });
+
    if (userRole === 'ADMIN') {
     router.push('/admin');
    } else {
@@ -34,9 +39,7 @@ const LoginForm = () => {
    console.error(error);
    // Affichez l'erreur à l'utilisateur ou gérez là comme vous le souhaitez.
   }
- }
-
-
+ };
 
  return (
   <form
