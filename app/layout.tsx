@@ -4,7 +4,6 @@ import '../styles/globals.css';
 import { ApolloWrapper } from './ApolloWrapper';
 import { UiProviders } from './UiProviders';
 import { UserProvider } from '../context/UserContext';
-import UserIs from '../components/utils/UserIs';
 
 interface RootLayoutProps {
  children: React.ReactNode;
@@ -16,8 +15,9 @@ const RootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps): ReactEl
   <body>
   <UserProvider>
   <UiProviders>
-   <ApolloWrapper>   <UserIs />
-    {children}</ApolloWrapper>
+   <ApolloWrapper>
+    {children}
+   </ApolloWrapper>
   </UiProviders>
   </UserProvider>
   </body>

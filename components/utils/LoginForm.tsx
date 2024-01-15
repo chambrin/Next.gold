@@ -4,7 +4,6 @@ import { useMutation, gql } from '@apollo/client';
 import { useRouter } from 'next/navigation';
 import Cookie from 'js-cookie';
 
-
 const LOGIN_MUTATION = gql`
     mutation Login($email: String!, $password: String!) {
         login(email: $email, password: $password) {
@@ -37,7 +36,7 @@ const LoginForm = () => {
    }
   } catch (error) {
    console.error(error);
-   // Affichez l'erreur à l'utilisateur ou gérez là comme vous le souhaitez.
+
   }
  };
 

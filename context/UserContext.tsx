@@ -25,11 +25,9 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
  useEffect(() => {
   // Récupérer l'utilisateur stocké dans le cookie lors de l'initialisation
   const userCookie = Cookie.get('user');
-  console.log('Cookie:', userCookie);
 
   if (userCookie && isJsonString(userCookie)) {
    const userData = JSON.parse(userCookie) as User;
-   console.log('User Data:', userData);
    setUser(userData);
   }
  }, []);
