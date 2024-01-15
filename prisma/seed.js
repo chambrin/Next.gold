@@ -1,7 +1,6 @@
 const db = require('../lib/db.js');
 const bcrypt = require('bcrypt');
 
-
 const saltRounds = 10;
 
 const users = [
