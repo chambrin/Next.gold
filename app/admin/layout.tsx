@@ -1,7 +1,8 @@
 'use client';
-import React, { FC, ReactElement, useEffect, useState } from 'react';
+import React, { FC, ReactElement,useEffect, useState } from 'react';
 import Cookie from 'js-cookie';
 import { useRouter } from 'next/navigation';
+import Sidebar from '../../components/admin/Sidebar';
 
 interface RootLayoutProps {
  children: React.ReactNode;
@@ -30,15 +31,29 @@ const DashboardLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps): Re
  }, [router, user]);
 
  return (
-  <div>
-   <h1>Tableau de bord</h1>
-   {user ? (
-    <p>Vous êtes connecté en tant que {user.name}</p>
-   ) : (
-    <p>Veuillez vous connecter pour accéder à cette page.</p>
-   )}
-   {children}
+  <div className="h-screen flex bg-gray-800">
+   {/* Sidebar div */}
+   <div className="w-64 p-6 flex-shrink-0 border-1 border-r border-gray-700">
+    {/* Sidebar content */}
+    <Sidebar />
+   </div>
+
+   {/* Content div */}
+   <div className="flex flex-col flex-grow overflow-hidden">
+
+    {/* Top bar */}
+    <header className="px-6 py-4 flex-shrink-0  border-b border-gray-700">
+     {/* Top bar content */}
+    </header>
+
+    {/* Content area */}
+    <main className="px-6 text-white py-8 overflow-x-hidden overflow-y-auto flex-grow">
+     {children}
+    </main>
+   </div>
   </div>
+
+
  );
 };
 
