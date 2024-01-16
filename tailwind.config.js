@@ -11,7 +11,11 @@ export default {
   './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
  ],
  theme: {
-  extend: {},
+  extend: {
+   borderWidth: {
+    '0.5': '0.5px',
+   }
+  },
  },
  darkMode: "class",
  plugins: [nextui()]

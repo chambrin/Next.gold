@@ -1,9 +1,9 @@
 "use client";
-
 import React, { FC, ReactElement } from 'react';
 import '../styles/globals.css';
 import { ApolloWrapper } from './ApolloWrapper';
-import { Providers } from './UiProviders';
+import { UiProviders } from './UiProviders';
+import { UserProvider } from '../context/UserContext';
 
 interface RootLayoutProps {
  children: React.ReactNode;
@@ -13,9 +13,13 @@ const RootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps): ReactEl
  return (
   <html lang="en" className='dark'>
   <body>
-  <Providers>
-  <ApolloWrapper>{children}</ApolloWrapper>
-  </Providers>
+  <UserProvider>
+  <UiProviders>
+   <ApolloWrapper>
+    {children}
+   </ApolloWrapper>
+  </UiProviders>
+  </UserProvider>
   </body>
   </html>
  );

@@ -1,7 +1,7 @@
 {
  "name": "next-gold",
- "version": "0.0.3",
- "description": "NextJs-Gold",
+ "version": "0.0.5",
+ "description": "Next.js gold Ultimate SAAS starter kit",
  "author": "chambrin",
  "license": "MIT",
  "keywords": [
@@ -37,14 +37,18 @@
   "@graphql-yoga/node": "^3.9.1",
   "@nextui-org/react": "^2.2.9",
   "@prisma/client": "^5.7.1",
+  "bcrypt": "^5.1.1",
+  "bcryptjs": "^2.4.3",
   "degit": "^2.8.4",
   "framer-motion": "^10.18.0",
   "graphql": "^16.8.1",
   "graphql-yoga": "^5.1.1",
+  "js-cookie": "^3.0.5",
   "next": "latest",
   "next-themes": "^0.2.1",
   "react": "^18.2.0",
   "react-dom": "^18.2.0",
+  "react-icons": "^5.0.1",
   "server-only": "^0.0.1"
  },
  "devDependencies": {
@@ -57,6 +61,9 @@
   "@storybook/react": "^7.6.7",
   "@storybook/test": "^7.6.7",
   "@testing-library/react": "14.1.2",
+  "@types/bcrypt": "^5.0.2",
+  "@types/bcryptjs": "^2.4.6",
+  "@types/js-cookie": "^3.0.6",
   "@types/node": "20.10.4",
   "@types/react": "18.2.45",
   "@vitejs/plugin-react": "^4.2.1",
