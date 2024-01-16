@@ -52,8 +52,6 @@ const DashboardLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps): Re
     </main>
    </div>
   </div>
-
-
  );
 };
 
