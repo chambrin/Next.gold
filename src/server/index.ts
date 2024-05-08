@@ -1,19 +1,9 @@
-import { Elysia } from "elysia";
-import next, { NextApiRequest, NextApiResponse } from 'next';
-import path from 'path';
+import YogaServer from "./config/yoga";
 
-const dev = process.env.NODE_ENV !== 'production';
-const nextApp = next({ dev, dir: path.resolve(__dirname, '../') });
-const handle = nextApp.getRequestHandler();
+YogaServer.listen(4000);
 
-nextApp.prepare().then(() => {
-    const app = new Elysia();
 
-    app.get('*', (req: NextApiRequest, res: NextApiResponse) => {
-        return handle(req, res);
-    });
+console.log(
+    `🦊 Elysia is running at ${YogaServer.server?.hostname}:${YogaServer.server?.port}`
+);
 
-    app.listen(4000, () => {
-        console.log(`🦊 Elysia is running at http://localhost:4000`);
-    });
-});
