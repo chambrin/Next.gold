@@ -3,7 +3,7 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"bun run --watch src/server/index.ts\" \"next dev -p 3000\""
+    "dev": "concurrently -n \"Elysia,Next\" -c \"bgBlue.bold,bgMagenta.bold\" \"bun run --watch src/server/index.ts\" \"next dev --turbo\""
   },
   "dependencies": {
     "concurrently": "^8.2.2",
