@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"bun run --watch src/server/index.ts\" \"next dev -p 3000\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "elysia": "latest",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
