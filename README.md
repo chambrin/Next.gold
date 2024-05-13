@@ -8,26 +8,26 @@ Project likely to evolve a lot.
 
 ## Installation
 
-```
+```npm
 npx create-next-gold-app my-project
 ```
 
 
 ## Tech stack
 
-- next.js
-- Elysia 
-- Shadcn
-- Tailwind
-- GrapgQL
-- bun
+- [Next.js](https://nextjs.org/)
+- [Elysia](https://elysiajs.com/)
+- [Shadcn](https://ui.shadcn.com/)
+- [Tailwind](https://tailwindcss.com/)
+- [GraphQL](https://graphql.org/)
+- [Bun](https://bun.sh/)
 
 
 **Add and edit the .env file for your database, before continuing**
 
 1. Install NPM packages
 
-```other
+```npm
 npm install
 ```
 
@@ -37,7 +37,8 @@ npm install
 
 To start the project in development, run the following command:
 
-```other
+```npm
 Bun run dev
 ```
+
 
