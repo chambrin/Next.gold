@@ -1,3 +1,3 @@
 export default function Page() {
-    return <h1>Hello, Next.js!</h1>
+    return <h1 className="text-pink-400">Hello, Next.js!</h1>
 }

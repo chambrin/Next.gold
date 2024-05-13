@@ -3,7 +3,8 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently -n \"Elysia,Next\" -c \"bgBlue.bold,bgMagenta.bold\" \"bun run --watch src/server/index.ts\" \"next dev --turbo -p 3000\""
+    "dev": "concurrently -n \"Elysia,Next\" -c \"bgBlue.bold,bgMagenta.bold\" \"bun run --watch src/server/index.ts\" \"next dev --turbo -p 3000\"",
+    "build": "next build"
   },
   "dependencies": {
     "@elysiajs/graphql-yoga": "^1.0.3",
@@ -15,7 +16,9 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.1",
-    "bun-types": "latest"
+    "autoprefixer": "^10.4.19",
+    "bun-types": "latest",
+    "tailwindcss": "^3.4.3"
   },
   "module": "src/index.js"
 }
