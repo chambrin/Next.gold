@@ -1,10 +1,24 @@
 {
-  "name": "app",
-  "version": "1.0.50",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently -n \"Elysia,Next\" -c \"bgBlue.bold,bgMagenta.bold\" \"bun run --watch src/server/index.ts\" \"next dev --turbo -p 3000\"",
-    "build": "next build"
+  "name": "next-gold",
+  "version": "0.1.5",
+  "description": "Next.js gold Ultimate SAAS starter kit",
+  "author": "chambrin",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "graphql",
+    "apollo",
+    "bun",
+    "elysia",
+    "boilerplate"
+  ],
+  "repository": {
+    "url": "https://github.com/chambrin/next.gold"
+  },
+  "bin": {
+    "create-next-gold-app": "./bin/index.js"
   },
   "dependencies": {
     "@elysiajs/graphql-yoga": "^1.0.3",
@@ -41,6 +55,7 @@
     "cmdk": "^1.0.0",
     "concurrently": "^8.2.2",
     "date-fns": "^3.6.0",
+    "degit": "^2.8.4",
     "elysia": "latest",
     "embla-carousel-react": "^8.0.4",
     "input-otp": "^1.2.4",

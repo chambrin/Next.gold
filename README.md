@@ -1,15 +1,43 @@
-# Elysia with Bun runtime
+# Next.js gold Ultimate SAAS starter kit
+![banner-next-gold](./public/img/banner-next-gold.png)
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
+Project likely to evolve a lot.
+
+**Under development 👨‍💻**
+
+
+## Installation
+
+```
+npx create-next-gold-app my-project
 ```
 
-## Development
-To start the development server run:
-```bash
-bun run dev
+
+## Tech stack
+
+- next.js
+- Elysia 
+- Shadcn
+- Tailwind
+- GrapgQL
+- bun
+
+
+**Add and edit the .env file for your database, before continuing**
+
+1. Install NPM packages
+
+```other
+npm install
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+---
+
+2. Run the app
+
+To start the project in development, run the following command:
+
+```other
+Bun run dev
+```
+
