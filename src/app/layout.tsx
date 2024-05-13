@@ -1,4 +1,5 @@
 import './style.css';
+import React from "react";
 
 export default function RootLayout({
                                        children,
@@ -7,7 +8,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-        <body className="bg-red-400">{children}</body>
+        <body>{children}</body>
         </html>
     )
 }
