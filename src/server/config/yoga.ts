@@ -1,9 +1,7 @@
-import { Elysia } from 'elysia';
 import { yoga } from '@elysiajs/graphql-yoga';
 
-const YogaServer = new Elysia()
-.use(
-    yoga({
+export const setupGraphQLServer = () => {
+    return yoga({
         typeDefs: /* GraphQL */`
             type Query {
                 hi: String
@@ -14,7 +12,5 @@ const YogaServer = new Elysia()
                 hi: () => 'Hello from Elysia'
             }
         }
-    })
-)
-
-export default YogaServer;
+    });
+}

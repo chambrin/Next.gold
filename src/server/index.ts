@@ -1,9 +1,14 @@
-import YogaServer from "./config/yoga";
+import { Elysia } from 'elysia';
+import { setupGraphQLServer } from './config/yoga';
 
-YogaServer.listen(4000);
+const app = new Elysia();
 
+app.use(setupGraphQLServer());
+
+app.get('/hi', () => 'hello')
+
+app.listen(4000);
 
 console.log(
-    `🦊 Elysia is running at ${YogaServer.server?.hostname}:${YogaServer.server?.port}`
+    `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
 );
-
