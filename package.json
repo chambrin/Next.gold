@@ -17,7 +17,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently -n \"Elysia,Next\" -c \"bgBlue.bold,bgMagenta.bold\" \"bun run --watch src/server/index.ts\" \"next dev --turbo -p 3000\"",
-    "build": "next build"
+    "build": "next build",
+    "start": "next start",
+    "prod:next": "next build && next start",
+    "prod:elysia": "bun run src/server/index.ts",
+    "prod": "concurrently -n \"Elysia,Next\" -c \"bgBlue.bold,bgMagenta.bold\" \"bun run prod:elysia\" \"bun run prod:next\""
   },
   "repository": {
     "url": "https://github.com/chambrin/next.gold"

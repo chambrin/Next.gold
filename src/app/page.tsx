@@ -4,6 +4,7 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import Link from "next/link"
+import React from "react";
 
 export default function Component() {
     return (
@@ -171,7 +172,7 @@ export default function Component() {
     )
 }
 
-function EclipseIcon(props) {
+function EclipseIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -192,7 +193,7 @@ function EclipseIcon(props) {
 }
 
 
-function MountainIcon(props) {
+function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -212,7 +213,7 @@ function MountainIcon(props) {
 }
 
 
-function NavigationIcon(props) {
+function NavigationIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -232,7 +233,7 @@ function NavigationIcon(props) {
 }
 
 
-function QrCodeIcon(props) {
+function QrCodeIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -263,7 +264,7 @@ function QrCodeIcon(props) {
 }
 
 
-function RabbitIcon(props) {
+function RabbitIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -287,7 +288,7 @@ function RabbitIcon(props) {
 }
 
 
-function TypeIcon(props) {
+function TypeIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -309,7 +310,7 @@ function TypeIcon(props) {
 }
 
 
-function WindIcon(props) {
+function WindIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}

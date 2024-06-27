@@ -41,4 +41,9 @@ To start the project in development, run the following command:
 Bun run dev
 ```
 
+### Build the app
+
+```npm
+bun run build
+```
 
